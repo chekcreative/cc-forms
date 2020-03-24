@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Chek Creative Protected Zapier Forms
  * Description: Zapier Forms with Google reCAPTCHA security
- * Version: 1.0
+ * Version: 1.0.1
  * Author: Chek Creative
  * Author URI: https://chekcreative.com
  * License: GPL3
@@ -215,5 +215,13 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	__FILE__,
 	'cc-forms'
 );
+
+/**
+ * Add Google reCAPTCHA to wp_head
+ */
+add_action('wp_head', 'google_site_key_head');
+function google_site_key_head() { ?>
+  <script src="https://www.google.com/recaptcha/api.js?render=<?php echo get_option( 'protected_zapier_options')['google_site']; ?>"></script>
+<?php };
 
 $myUpdateChecker->getVcsApi()->enableReleaseAssets();
