@@ -20,6 +20,9 @@ This plugin is intended for Chek Creative-hosted WordPress sites. It adds reCAPT
 
 == Changelog ==
 
+= 1.0.2 =
+* Fixed json_encode array bug
+
 = 1.0.1 =
 * Added reCAPTCHA to wp_head
 
