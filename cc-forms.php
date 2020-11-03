@@ -128,9 +128,9 @@ function update_option_func() {
     }
   }
   echo json_encode([
-    success => true,
-    message => "Updated fields",
-    data => get_option('protected_zapier_options')
+    "success" => true,
+    "message" => "Updated fields",
+    "data" => get_option('protected_zapier_options')
   ]);
 
 	wp_die(); // this is required to terminate immediately and return a proper response
