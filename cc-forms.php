@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Chek Creative Protected Zapier Forms
  * Description: Zapier Forms with Google reCAPTCHA security
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Chek Creative
  * Author URI: https://chekcreative.com
  * License: GPL3
